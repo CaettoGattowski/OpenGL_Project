@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 231,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\main.cpp*",
+              "RelativeToolTip": "main.cpp*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-24T15:40:25.369Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
