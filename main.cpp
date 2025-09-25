@@ -15,6 +15,7 @@
 // model matrix is the conversion, it allows to move from model coords from origin to world coords
 // Window dimensions
 const GLint WIDTH = 800, HEIGHT = 600;
+const float toRadians = 3.14159265f / 180.0f;
 
 
 GLuint VAO, VBO, shader, uniformModel; // multiple VAOs and VBOs for each object
@@ -23,6 +24,8 @@ bool direction = true;
 float triOffset = 0.0f;
 float triMaxoffset = 0.7f;
 float triIncrement = 0.00005f; //	speed of movement change
+
+float curAngle = 0.0f;
 
 
 
@@ -39,7 +42,7 @@ uniform mat4 model;																				\n\
 																								\n\
 void main()																						\n\
 {																								\n\
-    gl_Position = model * vec4(0.4 * pos.x, 0.4 * pos.y, pos.z, 1.0);							\n\
+    gl_Position = model * vec4(pos.x * 0.4, pos.y * 0.4, pos.z, 1.0);							\n\
 }";
 
 
@@ -219,15 +222,24 @@ int main()
 			direction = !direction;
 		}
 
+		curAngle += 0.01f;
+		if (curAngle >= 360)
+		{
+			curAngle -= 360;
+		}
+
 		// Clear window
 		glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
 
 		glUseProgram(shader);
 
+		// order of transforms is important, we need to accept one and figure out what is happening moving on // we need to use a projection matrix so that it's not relative to the window size in other words we get distorted sizes without a projection matrix
 		glm::mat4 model(1.0f);
-		model = glm::translate(model, glm::vec3(triOffset, triOffset, 0.0f));
-			
+		model = glm::translate(model, glm::vec3(triOffset, 0.0f, 0.0f));
+		model = glm::rotate(model, curAngle * toRadians, glm::vec3(0.0f, 0.0f, 1.0f));
+		
+
 		glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
 
 		glBindVertexArray(VAO);
