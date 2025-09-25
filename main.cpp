@@ -18,7 +18,7 @@ const GLint WIDTH = 800, HEIGHT = 600;
 const float toRadians = 3.14159265f / 180.0f;
 
 
-GLuint VAO, VBO, shader, uniformModel; // multiple VAOs and VBOs for each object
+GLuint VAO, VBO, IBO, shader, uniformModel, uniformProjection; // multiple VAOs and VBOs for each object
 
 bool direction = true;
 float triOffset = 0.0f;
@@ -32,40 +32,54 @@ float curSize = 0.4f;
 float maxSize = 0.8f;
 float minSize = 0.1f;
 
-// Vertex Shader takes each point vertices allows to modify values and pass them to fragment shader
+// Vertex Shader takes each point vertices allows to modify values and pass them to fragment shader // projection is how the camera translates what it sees to the screen - we see depth and 3rd perspective
 static const char* vShader = "																	\n\
 #version 330																					\n\
 																								\n\
 layout (location = 0) in vec3 pos;																\n\
 																								\n\
+out vec4 vCol;																					\n\
 																								\n\
 																								\n\
 uniform mat4 model;																				\n\
-																								\n\
+uniform mat4 projection;																		\n\
 																								\n\
 void main()																						\n\
 {																								\n\
-    gl_Position = model * vec4(pos, 1.0);														\n\
+    gl_Position = projection * model * vec4(pos, 1.0);											\n\
+	vCol = vec4(clamp(pos, 0.0f, 1.0f), 1.0f);													\n\
 }";
 
 
-// Fragment Shader is for more visual effects like on lava wavy heat, you modify the pixels across the picture
+// Fragment Shader is for more visual effects like on lava wavy heat, you modify the pixels across the picture // fragment shader interpolates the points 
 static const char* fShader = "																	\n\
 #version 330																					\n\
+																								\n\
+																								\n\
+in vec4 vCol;																					\n\
 																								\n\
 out vec4 colour;																				\n\
 																								\n\
 void main()																						\n\
 {																								\n\
-	colour = vec4(1.0, 0.0, 0.0, 1.0);															\n\
+	colour = vCol;																				\n\
 }";
 
 
 
 void CreateTriangle()
 {
+
+	unsigned int indices[] = {
+		0,3,1,
+		1,3,2,
+		2,3,0,
+		0,1,2
+	};
+
 	GLfloat vertices[] = {
 		-1.0f, -1.0f, 0.0f,
+		0.0f, -1.0f, 1.0f, //4th point is the depth point
 		1.0f, -1.0f, 0.0f,
 		0.0f, 1.0f, 0.0f
 	};
@@ -73,16 +87,20 @@ void CreateTriangle()
 	glGenVertexArrays(1, &VAO); // on the gpu it creates a vertex array and gives an ID set the one you are working on
 	glBindVertexArray(VAO);
 
-		glGenBuffers(1, &VBO); // same logic but for vertex buffers
+	glGenBuffers(1, &IBO);
+		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, IBO);
+		glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+
+	glGenBuffers(1, &VBO); // same logic but for vertex buffers
 		glBindBuffer(GL_ARRAY_BUFFER, VBO);
 			glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW); // static draw we arent changing the values, dynamic draw we are 
-
 			glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, 0);
 			glEnableVertexAttribArray(0);
 
 		glBindBuffer(GL_ARRAY_BUFFER, 0);
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 
-	glBindVertexArray(0);
+	glBindVertexArray(0);  // We should unbind the IBO/EBO AFTER we unbind the VAO
 }
 
 void AddShader(GLuint theProgram, const char* shaderCode, GLenum shaderType)
@@ -152,6 +170,7 @@ void CompileShaders() {
 	}
 
 	uniformModel = glGetUniformLocation(shader, "model");
+	uniformProjection = glGetUniformLocation(shader, "projection");
 
 }
 
@@ -201,11 +220,16 @@ int main()
 		return 1;
 	}
 
+	glEnable(GL_DEPTH_TEST); // determines which triangles are deeper // we need to add depth buffer to determine which triangle is behind others
+
 	// Create Viewport
 	glViewport(0, 0, bufferWidth, bufferHeight);
 
 	CreateTriangle();
 	CompileShaders();
+
+										// FOV Y, Aspect WIDTH/HEIGHT, viewing field at which point the viewing starts, distance field how far we see
+	glm::mat4 projection = glm::perspective(45.0f, (GLfloat)bufferWidth / (GLfloat)bufferHeight, 0.1f, 100.0f);
 
 	// Loop until window closed
 	while (!glfwWindowShouldClose(mainWindow))
@@ -213,7 +237,7 @@ int main()
 		// Get + Handle user input events
 		glfwPollEvents();
 
-		if (sizeDirection)
+		if (direction)
 		{
 			triOffset += triIncrement;
 		}
@@ -231,7 +255,7 @@ int main()
 			curAngle -= 360;
 		}
 
-		if (direction)
+		if (sizeDirection)
 		{
 			curSize += 0.0001f;
 		}
@@ -245,22 +269,26 @@ int main()
 
 		// Clear window
 		glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
-		glClear(GL_COLOR_BUFFER_BIT);
+		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 		glUseProgram(shader);
 
 		// order of transforms is important, we need to accept one and figure out what is happening moving on // we need to use a projection matrix so that it's not relative to the window size in other words we get distorted sizes without a projection matrix
 		glm::mat4 model(1.0f);
-		model = glm::scale(model, glm::vec3(curSize, curSize, 1.0f)); // we scale relative to the origin, first we scale
-		model = glm::translate(model, glm::vec3(triOffset, 0.0f, 0.0f));
-		model = glm::rotate(model, curAngle * toRadians, glm::vec3(0.0f, 0.0f, 1.0f));
-		
+		model = glm::translate(model, glm::vec3(triOffset, 0.0f, -2.5f));
+		//model = glm::rotate(model, curAngle * toRadians, glm::vec3(0.0f, 1.0f, 0.0f)); 
+		model = glm::scale(model, glm::vec3(0.4f, 0.4f, 1.0f)); // we scale relative to the origin, first we scale
+	
 		
 
 		glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
+		glUniformMatrix4fv(uniformProjection, 1, GL_FALSE, glm::value_ptr(projection));
 
 		glBindVertexArray(VAO);
-		glDrawArrays(GL_TRIANGLES, 0, 3);
+		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, IBO);
+		glDrawElements(GL_TRIANGLES, 12, GL_UNSIGNED_INT, 0);
+
+		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 		glBindVertexArray(0);
 			
 		glUseProgram(0);
