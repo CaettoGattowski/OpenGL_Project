@@ -7,6 +7,38 @@
       "RelativeMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Light.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|solutionrelative:Light.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Shader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|solutionrelative:Shader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Shader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|solutionrelative:Shader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Mesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|solutionrelative:Mesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Light.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|solutionrelative:Light.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Window.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|solutionrelative:Window.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Window.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|solutionrelative:Window.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Camera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|solutionrelative:Camera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|solutionrelative:Camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -19,35 +51,8 @@
       "RelativeMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|solutionrelative:Texture.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mario\\AppData\\Local\\Temp\\5445dc24-9e55-46ed-93a5-c475f6c16efe_OpenGLCourseApp_Textures.zip.efe\\OpenGLCourseApp\\OpenGLCourseApp\\Texture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|solutionrelative:Mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Camera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|solutionrelative:Camera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Shader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|solutionrelative:Shader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Shader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|solutionrelative:Shader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Window.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|solutionrelative:Window.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Window.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|solutionrelative:Window.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Mesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|solutionrelative:Mesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -57,11 +62,37 @@
       "DocumentGroups": [
         {
           "DockedHeight": 231,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "Light.cpp",
+              "DocumentMoniker": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Light.cpp",
+              "RelativeDocumentMoniker": "Light.cpp",
+              "ToolTip": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Light.cpp",
+              "RelativeToolTip": "Light.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-28T16:42:08.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Light.h",
+              "DocumentMoniker": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Light.h",
+              "RelativeDocumentMoniker": "Light.h",
+              "ToolTip": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Light.h",
+              "RelativeToolTip": "Light.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-28T16:42:05.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Texture.cpp",
               "DocumentMoniker": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Texture.cpp",
               "RelativeDocumentMoniker": "Texture.cpp",
@@ -69,12 +100,11 @@
               "RelativeToolTip": "Texture.cpp",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAADkAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-28T00:14:42.737Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-28T00:14:42.737Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "Texture.h",
               "DocumentMoniker": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Texture.h",
               "RelativeDocumentMoniker": "Texture.h",
@@ -82,12 +112,11 @@
               "RelativeToolTip": "Texture.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-28T00:14:37.9Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-28T00:14:37.9Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Camera.h",
               "DocumentMoniker": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Camera.h",
               "RelativeDocumentMoniker": "Camera.h",
@@ -99,20 +128,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "Camera.cpp",
               "DocumentMoniker": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Camera.cpp",
               "RelativeDocumentMoniker": "Camera.cpp",
               "ToolTip": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Camera.cpp",
               "RelativeToolTip": "Camera.cpp",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAEUAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-26T19:47:58.414Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T19:47:58.414Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 7,
               "Title": "Window.h",
               "DocumentMoniker": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Window.h",
               "RelativeDocumentMoniker": "Window.h",
@@ -124,43 +152,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "Window.cpp",
               "DocumentMoniker": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Window.cpp",
               "RelativeDocumentMoniker": "Window.cpp",
               "ToolTip": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Window.cpp",
               "RelativeToolTip": "Window.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAGkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-26T18:46:41.423Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "Shader.cpp",
               "DocumentMoniker": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Shader.cpp",
               "RelativeDocumentMoniker": "Shader.cpp",
               "ToolTip": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Shader.cpp",
               "RelativeToolTip": "Shader.cpp",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAFoAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAGYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-26T18:47:20.402Z"
+              "WhenOpened": "2025-09-26T18:47:20.402Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "Shader.h",
               "DocumentMoniker": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Shader.h",
               "RelativeDocumentMoniker": "Shader.h",
               "ToolTip": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Shader.h",
               "RelativeToolTip": "Shader.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-26T18:47:38.047Z"
+              "WhenOpened": "2025-09-26T18:47:38.047Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 4,
               "Title": "Mesh.h",
               "DocumentMoniker": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Mesh.h",
               "RelativeDocumentMoniker": "Mesh.h",
@@ -168,11 +198,12 @@
               "RelativeToolTip": "Mesh.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-26T18:47:30.856Z"
+              "WhenOpened": "2025-09-26T18:47:30.856Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "Mesh.cpp",
               "DocumentMoniker": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Mesh.cpp",
               "RelativeDocumentMoniker": "Mesh.cpp",
@@ -188,46 +219,12 @@
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\main.cpp",
-              "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFUAAABaAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\main.cpp*",
+              "RelativeToolTip": "main.cpp*",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAGAAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-24T15:40:25.369Z",
               "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "9f1766ca-d838-41ea-a980-03e911db3be4",
-        "Display": 0,
-        "X": 991,
-        "Y": 268,
-        "Width": 1110,
-        "Height": 568,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Texture.cpp",
-              "DocumentMoniker": "C:\\Users\\mario\\AppData\\Local\\Temp\\5445dc24-9e55-46ed-93a5-c475f6c16efe_OpenGLCourseApp_Textures.zip.efe\\OpenGLCourseApp\\OpenGLCourseApp\\Texture.cpp",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\5445dc24-9e55-46ed-93a5-c475f6c16efe_OpenGLCourseApp_Textures.zip.efe\\OpenGLCourseApp\\OpenGLCourseApp\\Texture.cpp",
-              "ToolTip": "C:\\Users\\mario\\AppData\\Local\\Temp\\5445dc24-9e55-46ed-93a5-c475f6c16efe_OpenGLCourseApp_Textures.zip.efe\\OpenGLCourseApp\\OpenGLCourseApp\\Texture.cpp [Read Only]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\5445dc24-9e55-46ed-93a5-c475f6c16efe_OpenGLCourseApp_Textures.zip.efe\\OpenGLCourseApp\\OpenGLCourseApp\\Texture.cpp [Read Only]",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-28T09:46:30.973Z",
-              "EditorCaption": " [Read Only]"
             }
           ]
         }

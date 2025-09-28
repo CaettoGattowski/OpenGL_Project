@@ -1,3 +1,5 @@
 ﻿  main.cpp
-C:\Users\mario\Documents\Visual Studio 2022\Projects\OpenGLCourseApp\OpenGL_Project\main.cpp(102,15): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\mario\Documents\Visual Studio 2022\Projects\OpenGLCourseApp\OpenGL_Project\main.cpp(106,15): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\mario\Documents\Visual Studio 2022\Projects\OpenGLCourseApp\OpenGL_Project\main.cpp(128,47): warning C4244: 'argument': conversion from 'GLuint' to 'GLfloat', possible loss of data
+C:\Users\mario\Documents\Visual Studio 2022\Projects\OpenGLCourseApp\OpenGL_Project\main.cpp(128,22): warning C4244: 'argument': conversion from 'GLuint' to 'GLfloat', possible loss of data
   OpenGLCourseApp.vcxproj -> C:\Users\mario\Documents\Visual Studio 2022\Projects\OpenGLCourseApp\OpenGL_Project\Debug\OpenGLCourseApp.exe
