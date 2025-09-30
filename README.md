@@ -18,3 +18,8 @@ picture 3
 
 picture 4
 <img width="2247" height="946" alt="Screenshot 2025-09-30 115423" src="https://github.com/user-attachments/assets/2af5e1e2-735e-44e0-9434-7974d9d45150" />
+
+Added Specular Lighting on both triangles one with dull one with shiny material as shown in picture 5.
+
+picture 5
+<img width="2247" height="950" alt="Screenshot 2025-09-30 175035" src="https://github.com/user-attachments/assets/a03b9a18-dec4-49b3-b837-54215ef9f663" />
