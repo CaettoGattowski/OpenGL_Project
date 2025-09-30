@@ -72,6 +72,11 @@ glm::mat4 Camera::calculateViewMatrix()
 
 }
 
+glm::vec3 Camera::getCameraPosition()
+{
+	return position;
+}
+
 void Camera::update() // uniform function across all applications unless space or plane simulator 
 {
 	front.x = cos(glm::radians(yaw) * cos(glm::radians(pitch)));
