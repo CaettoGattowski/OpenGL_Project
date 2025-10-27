@@ -7,6 +7,11 @@
 
 #include <GL\glew.h>
 
+#include "CommonValues.h"
+
+#include "DirectionalLight.h"
+#include "PointLight.h"
+
 class Shader
 {
 public:
@@ -27,6 +32,9 @@ public:
 	GLuint GetEyePositionLocation();
 	GLuint GetSpecularIntensityLocation();
 	GLuint GetShininessLocation();
+	
+	void SetDirectionalLight(DirectionalLight * dLight);
+	void SetPointLight(PointLight* pLight, unsigned int lightCount);
 
 	void UseShader();
 	void ClearShader();
@@ -34,9 +42,33 @@ public:
 	~Shader();
 
 private:
+	int pointLightCount;
+
 	GLuint shaderID, uniformProjection, uniformModel, uniformView, uniformEyePosition, // world values
-		uniformAmbientIntensity, uniformAmbientColour, uniformDiffuseIntensity, uniformDirection, // light values
 		uniformSpecularIntensity, uniformShininess; // material values
+
+	struct {
+		GLuint uniformColour;
+		GLuint uniformAmbientIntensity;
+		GLuint uniformDiffuseIntensity;
+
+		GLuint uniformDirection;
+		
+	} uniformDirectionalLight;
+
+	GLuint uniformPointLightCount;
+
+	struct {
+		GLuint uniformColour;
+		GLuint uniformAmbientIntensity;
+		GLuint uniformDiffuseIntensity;
+
+		GLuint uniformPosition;
+		GLuint uniformConstant;
+		GLuint uniformLinear;
+		GLuint uniformExponent;
+
+	} uniformPointLight[MAX_POINT_LIGHTS]; // we want this as an array = to the max amount of point lights
 
 	void CompileShader(const char* vertexCode, const char* fragmentCode);
 	void AddShader(GLuint theProgram, const char* shaderCode, GLenum shaderType);
