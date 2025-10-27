@@ -23,3 +23,11 @@ Added Specular Lighting on both triangles one with dull one with shiny material 
 
 picture 5
 <img width="2247" height="950" alt="Screenshot 2025-09-30 175035" src="https://github.com/user-attachments/assets/a03b9a18-dec4-49b3-b837-54215ef9f663" />
+
+Added two different point Lights, green and blue that shine on the two triangle pyramids and the floor as seen on picture 6. The shininess can be seen on picture 7.
+
+picture 6
+<img width="795" height="592" alt="Screenshot 2025-10-27 155331" src="https://github.com/user-attachments/assets/047c4eac-560b-491a-b1aa-42fc2f79066d" />
+
+picture 7
+<img width="789" height="576" alt="Screenshot 2025-10-27 155718" src="https://github.com/user-attachments/assets/54448fcd-5992-4248-8acb-f673e050a054" />
