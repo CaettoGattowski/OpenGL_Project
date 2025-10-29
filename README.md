@@ -33,3 +33,15 @@ picture 6
 picture 7
 
 <img width="789" height="576" alt="Screenshot 2025-10-27 155718" src="https://github.com/user-attachments/assets/54448fcd-5992-4248-8acb-f673e050a054" />
+
+Added a flashlight camera based position and direction that changes depending the depth as shown in pictures 8 and 9.
+
+pciture 8
+
+<img width="791" height="592" alt="Screenshot 2025-10-29 201104" src="https://github.com/user-attachments/assets/3555c552-5905-481d-a26b-02618b201d71" />
+
+
+picture 9
+
+
+<img width="792" height="596" alt="Screenshot 2025-10-29 201115" src="https://github.com/user-attachments/assets/1f059341-dc35-47de-aee8-4216b86572bc" />
