@@ -76,13 +76,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\..\..\External Libs\GLEW\include;$(SolutionDir)..\..\..\External Libs\GLFW\include;$(SolutionDir)..\..\..\External Libs\SDL;$(SolutionDir)..\..\..\External Libs\GLM;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\..\External Libs\GLEW\include;$(SolutionDir)..\..\..\External Libs\GLFW\include;$(SolutionDir)..\..\..\External Libs\SDL;$(SolutionDir)..\..\..\External Libs\GLM;$(SolutionDir)..\..\..\External Libs\ASSIMP\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)..\..\..\External Libs\GLEW\lib\Release\Win32;$(SolutionDir)..\..\..\External Libs\GLFW\lib-vc2022;$(SolutionDir)..\..\..\External Libs/SDL;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\..\External Libs\GLEW\lib\Release\x64;$(SolutionDir)..\..\..\External Libs\GLFW\lib-vc2022;$(SolutionDir)..\..\..\External Libs\ASSIMP\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -93,13 +93,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\..\..\External Libs\GLEW\include;$(SolutionDir)..\..\..\External Libs\GLFW\include;$(SolutionDir)..\..\..\External Libs\SDL;$(SolutionDir)..\..\..\External Libs\GLM;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\..\External Libs\GLEW\include;$(SolutionDir)..\..\..\External Libs\GLFW\include;$(SolutionDir)..\..\..\External Libs\SDL;$(SolutionDir)..\..\..\External Libs\GLM;$(SolutionDir)..\..\..\External Libs\ASSIMP\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)..\..\..\External Libs\GLEW\lib\Release\Win32;$(SolutionDir)..\..\..\External Libs\GLFW\lib-vc2022;$(SolutionDir)..\..\..\External Libs/SDL;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\..\External Libs\GLEW\lib\Release\x64;$(SolutionDir)..\..\..\External Libs\GLFW\lib-vc2022;$(SolutionDir)..\..\..\External Libs\ASSIMP\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -108,13 +108,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\..\..\External Libs\GLEW\include;$(SolutionDir)..\..\..\External Libs\GLFW\include;$(SolutionDir)..\..\..\External Libs\SDL;$(SolutionDir)..\..\..\External Libs\GLM;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\..\External Libs\GLEW\include;$(SolutionDir)..\..\..\External Libs\GLFW\include;$(SolutionDir)..\..\..\External Libs\SDL;$(SolutionDir)..\..\..\External Libs\GLM;$(SolutionDir)..\..\..\External Libs\ASSIMP\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)..\..\..\External Libs\GLEW\lib\Release\Win32;$(SolutionDir)..\..\..\External Libs\GLFW\lib-vc2022;$(SolutionDir)..\..\..\External Libs/SDL;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\..\External Libs\GLEW\lib\Release\x64;$(SolutionDir)..\..\..\External Libs\GLFW\lib-vc2022;$(SolutionDir)..\..\..\External Libs\ASSIMP\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -125,13 +125,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\..\..\External Libs\GLEW\include;$(SolutionDir)..\..\..\External Libs\GLFW\include;$(SolutionDir)..\..\..\External Libs\SDL;$(SolutionDir)..\..\..\External Libs\GLM;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\..\External Libs\GLEW\include;$(SolutionDir)..\..\..\External Libs\GLFW\include;$(SolutionDir)..\..\..\External Libs\SDL;$(SolutionDir)..\..\..\External Libs\GLM;$(SolutionDir)..\..\..\External Libs\ASSIMP\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)..\..\..\External Libs\GLEW\lib\Release\Win32;$(SolutionDir)..\..\..\External Libs\GLFW\lib-vc2022;$(SolutionDir)..\..\..\External Libs/SDL;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\..\External Libs\GLEW\lib\Release\x64;$(SolutionDir)..\..\..\External Libs\GLFW\lib-vc2022;$(SolutionDir)..\..\..\External Libs\ASSIMP\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -141,6 +141,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Material.cpp" />
     <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="Model.cpp" />
     <ClCompile Include="PointLight.cpp" />
     <ClCompile Include="Shader.cpp" />
     <ClCompile Include="SpotLight.cpp" />
@@ -154,6 +155,7 @@
     <ClInclude Include="Light.h" />
     <ClInclude Include="Material.h" />
     <ClInclude Include="Mesh.h" />
+    <ClInclude Include="Model.h" />
     <ClInclude Include="PointLight.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="SpotLight.h" />

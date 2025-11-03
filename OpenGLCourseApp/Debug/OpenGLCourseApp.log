@@ -1,3 +1,33 @@
-﻿  main.cpp
-C:\Users\mario\Documents\Visual Studio 2022\Projects\OpenGLCourseApp\OpenGL_Project\main.cpp(202,15): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
-  OpenGLCourseApp.vcxproj -> C:\Users\mario\Documents\Visual Studio 2022\Projects\OpenGLCourseApp\OpenGL_Project\Debug\OpenGLCourseApp.exe
+﻿  Camera.cpp
+  DirectionalLight.cpp
+C:\Users\mario\Documents\Visual Studio 2022\Projects\OpenGLCourseApp\OpenGL_Project\DirectionalLight.cpp(18,14): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\mario\Documents\Visual Studio 2022\Projects\OpenGLCourseApp\OpenGL_Project\DirectionalLight.cpp(19,14): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\mario\Documents\Visual Studio 2022\Projects\OpenGLCourseApp\OpenGL_Project\DirectionalLight.cpp(21,14): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\mario\Documents\Visual Studio 2022\Projects\OpenGLCourseApp\OpenGL_Project\DirectionalLight.cpp(22,14): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+  Light.cpp
+  main.cpp
+C:\Users\mario\Documents\Visual Studio 2022\Projects\OpenGLCourseApp\OpenGL_Project\main.cpp(207,15): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+  Material.cpp
+  Mesh.cpp
+  PointLight.cpp
+  Shader.cpp
+C:\Users\mario\Documents\Visual Studio 2022\Projects\OpenGLCourseApp\OpenGL_Project\Shader.cpp(210,75): warning C4244: 'argument': conversion from 'GLuint' to 'GLfloat', possible loss of data
+C:\Users\mario\Documents\Visual Studio 2022\Projects\OpenGLCourseApp\OpenGL_Project\Shader.cpp(210,26): warning C4244: 'argument': conversion from 'GLuint' to 'GLfloat', possible loss of data
+C:\Users\mario\Documents\Visual Studio 2022\Projects\OpenGLCourseApp\OpenGL_Project\Shader.cpp(209,91): warning C4244: 'argument': conversion from 'GLuint' to 'GLfloat', possible loss of data
+C:\Users\mario\Documents\Visual Studio 2022\Projects\OpenGLCourseApp\OpenGL_Project\Shader.cpp(209,42): warning C4244: 'argument': conversion from 'GLuint' to 'GLfloat', possible loss of data
+  SpotLight.cpp
+  Texture.cpp
+  Window.cpp
+C:\Users\mario\Documents\Visual Studio 2022\Projects\OpenGLCourseApp\OpenGL_Project\Window.cpp(140,22): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\mario\Documents\Visual Studio 2022\Projects\OpenGLCourseApp\OpenGL_Project\Window.cpp(141,22): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\mario\Documents\Visual Studio 2022\Projects\OpenGLCourseApp\OpenGL_Project\Window.cpp(145,28): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\mario\Documents\Visual Studio 2022\Projects\OpenGLCourseApp\OpenGL_Project\Window.cpp(146,40): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\mario\Documents\Visual Studio 2022\Projects\OpenGLCourseApp\OpenGL_Project\Window.cpp(148,21): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\mario\Documents\Visual Studio 2022\Projects\OpenGLCourseApp\OpenGL_Project\Window.cpp(149,21): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+  Generating Code...
+C:\Users\mario\Documents\Visual Studio 2022\Projects\OpenGLCourseApp\OpenGL_Project\Window.cpp(89,1): warning C4715: 'Window::Initialise': not all control paths return a value
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+main.obj : error LNK2019: unresolved external symbol "public: __thiscall Assimp::Importer::Importer(void)" (??0Importer@Assimp@@QAE@XZ) referenced in function _main
+main.obj : error LNK2019: unresolved external symbol "public: __thiscall Assimp::Importer::~Importer(void)" (??1Importer@Assimp@@QAE@XZ) referenced in function _main
+C:\Users\mario\Documents\Visual Studio 2022\Projects\OpenGLCourseApp\OpenGL_Project\..\..\..\External Libs\ASSIMP\lib\assimp.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+C:\Users\mario\Documents\Visual Studio 2022\Projects\OpenGLCourseApp\OpenGL_Project\Debug\OpenGLCourseApp.exe : fatal error LNK1120: 2 unresolved externals

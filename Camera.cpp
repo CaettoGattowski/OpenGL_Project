@@ -18,7 +18,6 @@ Camera::Camera(glm::vec3 startPosition, glm::vec3 startUp, GLfloat startYaw, GLf
 
 void Camera::keyControl(bool* keys, GLfloat deltaTime)
 {
-
 	GLfloat velocity = moveSpeed * deltaTime;
 
 	if (keys[GLFW_KEY_W])
@@ -31,17 +30,15 @@ void Camera::keyControl(bool* keys, GLfloat deltaTime)
 		position -= front * velocity;
 	}
 
-	if (keys[GLFW_KEY_D])
-	{
-		position += right * velocity;
-	}
-
 	if (keys[GLFW_KEY_A])
 	{
 		position -= right * velocity;
 	}
 
-
+	if (keys[GLFW_KEY_D])
+	{
+		position += right * velocity;
+	}
 }
 
 void Camera::mouseControl(GLfloat xChange, GLfloat yChange)
@@ -67,34 +64,30 @@ void Camera::mouseControl(GLfloat xChange, GLfloat yChange)
 
 glm::mat4 Camera::calculateViewMatrix()
 {
-	// where we are looking at from, where the thing we are looking at is, where up is in the world
-	return glm::lookAt(position, position + front, up);				// calculates matrix that looks at something 
-
+	return glm::lookAt(position, position + front, up); // calculates matrix that looks at something 
 }
 
 glm::vec3 Camera::getCameraPosition()
 {
 	return position;
 }
-
 glm::vec3 Camera::getCameraDirection()
 {
 	return glm::normalize(front);
 }
 
-void Camera::update() // uniform function across all applications unless space or plane simulator 
+void Camera::update()
 {
-	front.x = cos(glm::radians(yaw) * cos(glm::radians(pitch)));
+	front.x = cos(glm::radians(yaw)) * cos(glm::radians(pitch));
 	front.y = sin(glm::radians(pitch));
-	front.z = sin(glm::radians(yaw) * cos(glm::radians(pitch)));
+	front.z = sin(glm::radians(yaw)) * cos(glm::radians(pitch));
 	front = glm::normalize(front); // normalizing vector is we reset the magnitude to 1, we are basically measuring 1 unit we dont care how far in front we just care about where that front is
 
 	right = glm::normalize(glm::cross(front, worldUp)); // we need to calculate the front based on where our worldUp which is constantly pointing up
-	up = glm::normalize(glm::cross(right, front)); // our Up can turn 
-
+	up = glm::normalize(glm::cross(right, front));// our Up can turn 
 }
+
 
 Camera::~Camera()
 {
-
 }

@@ -10,7 +10,7 @@ Texture::Texture()
 	fileLocation = NULL;
 }
 
-Texture::Texture(char* fileLoc)
+Texture::Texture(const char* fileLoc)
 {
 	textureID = 0;
 	width = 0;
@@ -18,13 +18,43 @@ Texture::Texture(char* fileLoc)
 	bitDepth = 0;
 	fileLocation = fileLoc;
 }
-void Texture::LoadTexture()
+
+bool Texture::LoadTexture()
 {
 	unsigned char* texData = stbi_load(fileLocation, &width, &height, &bitDepth, 0);
 	if (!texData)
 	{
 		printf("Failed to find: %s\n", fileLocation);
-		return;
+		return false;
+	}
+
+	glGenTextures(1, &textureID);
+	glBindTexture(GL_TEXTURE_2D, textureID);
+
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT); // S is how the image is wrapping along the X axis
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR); // linear = when you zoom on 2 pixels it will try to blend them together when zoom in or out , nearest is more pixelated retro look
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR); // linear = when you zoom on 2 pixels it will try to blend them together when zoom in or out , nearest is more pixelated retro look
+
+
+	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, texData); // char is a byte they are both 8 bits long
+	glGenerateMipmap(GL_TEXTURE_2D);
+
+
+	glBindTexture(GL_TEXTURE_2D, 0);
+
+	stbi_image_free(texData);
+
+	return true;
+}
+
+bool Texture::LoadTextureA()
+{
+	unsigned char* texData = stbi_load(fileLocation, &width, &height, &bitDepth, 0);
+	if (!texData)
+	{
+		printf("Failed to find: %s\n", fileLocation);
+		return false;
 	}
 
 	glGenTextures(1, &textureID);
@@ -43,6 +73,8 @@ void Texture::LoadTexture()
 	glBindTexture(GL_TEXTURE_2D, 0);
 
 	stbi_image_free(texData);
+
+	return true;
 }
 
 void Texture::UseTexture()
