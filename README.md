@@ -45,3 +45,16 @@ picture 9
 
 
 <img width="792" height="596" alt="Screenshot 2025-10-29 201115" src="https://github.com/user-attachments/assets/1f059341-dc35-47de-aee8-4216b86572bc" />
+
+
+Added a model importer with proper memory allocation and saving whilst also importing textures for each model as shown in the pictures below.
+
+picture 10
+
+<img width="794" height="595" alt="Screenshot 2025-11-03 181315" src="https://github.com/user-attachments/assets/0a85b06e-59a8-4a9c-87ad-413aeadb687a" />
+
+
+picture 11
+
+<img width="791" height="592" alt="Screenshot 2025-11-03 181331" src="https://github.com/user-attachments/assets/0b8c2fe5-42a8-4625-b451-e47b309c949b" />
+
