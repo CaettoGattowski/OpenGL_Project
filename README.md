@@ -79,6 +79,7 @@ Picture 14
 <img width="1361" height="764" alt="Screenshot 2025-11-04 232300" src="https://github.com/user-attachments/assets/81f11ac4-21f9-45a2-a3f6-8f8ab4954a2e" />
 
 All in all these are the things i managed to learn and use correctly in this small scale project that could be also the start of a game engine:
+
 How to create and manipulate windows
 
 How to draw meshes/models
