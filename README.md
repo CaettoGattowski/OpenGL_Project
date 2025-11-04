@@ -80,16 +80,30 @@ Picture 14
 
 All in all these are the things i managed to learn and use correctly in this small scale project that could be also the start of a game engine:
 How to create and manipulate windows
+
 How to draw meshes/models
+
 How to use Shaders
+
 How to use Uniforms
+
 How to use GLM to transform models
+
 How to use Indexed Draws
+
 How to use Projections
+
 How to create and control a camera
+
 How to map textures
+
 How to use the Phong Lightning Model
+
 How to implement Directional, Point and Spot Lights
+
 How to import models
+
 How to create and use Shadow Maps
+
 How to implement a Skybox
+
