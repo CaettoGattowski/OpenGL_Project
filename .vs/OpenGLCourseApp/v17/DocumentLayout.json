@@ -7,19 +7,19 @@
       "RelativeMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Skybox.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|solutionrelative:Skybox.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mario\\AppData\\Local\\Temp\\a10da43d-457c-41c8-a74f-85898d746683_OpenGLCourseApp_Skybox.zip.683\\OpenGLCourseApp\\OpenGLCourseApp\\Skybox.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Texture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|solutionrelative:Texture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mario\\AppData\\Local\\Temp\\cc1eca09-07c6-442e-95b1-eae7e1b9d4c5_OpenGLCourseApp_OmniDir.zip.4c5\\OpenGLCourseApp\\OpenGLCourseApp\\Texture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Shader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|solutionrelative:Shader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Shader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|solutionrelative:Shader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Skybox.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6550AC73-9CAC-4559-8E69-540867B41FD7}|OpenGLCourseApp.vcxproj|solutionrelative:Skybox.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,54 +33,54 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "Skybox.cpp",
+              "DocumentMoniker": "C:\\Users\\mario\\AppData\\Local\\Temp\\a10da43d-457c-41c8-a74f-85898d746683_OpenGLCourseApp_Skybox.zip.683\\OpenGLCourseApp\\OpenGLCourseApp\\Skybox.cpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\a10da43d-457c-41c8-a74f-85898d746683_OpenGLCourseApp_Skybox.zip.683\\OpenGLCourseApp\\OpenGLCourseApp\\Skybox.cpp",
+              "ToolTip": "C:\\Users\\mario\\AppData\\Local\\Temp\\a10da43d-457c-41c8-a74f-85898d746683_OpenGLCourseApp_Skybox.zip.683\\OpenGLCourseApp\\OpenGLCourseApp\\Skybox.cpp [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\a10da43d-457c-41c8-a74f-85898d746683_OpenGLCourseApp_Skybox.zip.683\\OpenGLCourseApp\\OpenGLCourseApp\\Skybox.cpp [Read Only]",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAFIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-04T21:39:42.852Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Texture.cpp",
               "DocumentMoniker": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Texture.cpp",
               "RelativeDocumentMoniker": "Texture.cpp",
               "ToolTip": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Texture.cpp",
               "RelativeToolTip": "Texture.cpp",
-              "ViewState": "AgIAADIAAAAAAAAAAAAYwE4AAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAYwD0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-10-30T17:34:23.391Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Texture.cpp",
-              "DocumentMoniker": "C:\\Users\\mario\\AppData\\Local\\Temp\\cc1eca09-07c6-442e-95b1-eae7e1b9d4c5_OpenGLCourseApp_OmniDir.zip.4c5\\OpenGLCourseApp\\OpenGLCourseApp\\Texture.cpp",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\cc1eca09-07c6-442e-95b1-eae7e1b9d4c5_OpenGLCourseApp_OmniDir.zip.4c5\\OpenGLCourseApp\\OpenGLCourseApp\\Texture.cpp",
-              "ToolTip": "C:\\Users\\mario\\AppData\\Local\\Temp\\cc1eca09-07c6-442e-95b1-eae7e1b9d4c5_OpenGLCourseApp_OmniDir.zip.4c5\\OpenGLCourseApp\\OpenGLCourseApp\\Texture.cpp [Read Only]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\cc1eca09-07c6-442e-95b1-eae7e1b9d4c5_OpenGLCourseApp_OmniDir.zip.4c5\\OpenGLCourseApp\\OpenGLCourseApp\\Texture.cpp [Read Only]",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-04T21:07:00.781Z",
-              "EditorCaption": " [Read Only]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Shader.cpp",
-              "DocumentMoniker": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Shader.cpp",
-              "RelativeDocumentMoniker": "Shader.cpp",
-              "ToolTip": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Shader.cpp",
-              "RelativeToolTip": "Shader.cpp",
-              "ViewState": "AgIAAEQBAAAAAAAAAAAAAFIBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-04T21:05:05.091Z",
+              "DocumentIndex": 4,
+              "Title": "Skybox.h",
+              "DocumentMoniker": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Skybox.h",
+              "RelativeDocumentMoniker": "Skybox.h",
+              "ToolTip": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Skybox.h",
+              "RelativeToolTip": "Skybox.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-04T21:22:59.387Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Shader.h",
-              "DocumentMoniker": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Shader.h",
-              "RelativeDocumentMoniker": "Shader.h",
-              "ToolTip": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Shader.h",
-              "RelativeToolTip": "Shader.h",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAADEAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-04T21:03:19.013Z",
+              "DocumentIndex": 1,
+              "Title": "Skybox.cpp",
+              "DocumentMoniker": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Skybox.cpp",
+              "RelativeDocumentMoniker": "Skybox.cpp",
+              "ToolTip": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\Skybox.cpp",
+              "RelativeToolTip": "Skybox.cpp",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAYwFUAAADSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-04T21:23:02.037Z",
               "EditorCaption": ""
             },
             {
@@ -91,7 +91,7 @@
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\mario\\Documents\\Visual Studio 2022\\Projects\\OpenGLCourseApp\\OpenGL_Project\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAHcBAAAAAAAAAAAAALcAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAADIBAAAAAAAAAAAAAFcBAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-24T15:40:25.369Z",
               "EditorCaption": ""

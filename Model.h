@@ -31,3 +31,4 @@ private:
 	std::vector<Texture*> textureList;
 	std::vector<unsigned int> meshToTex;
 };
+
