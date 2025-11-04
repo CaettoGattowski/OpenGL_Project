@@ -6,6 +6,8 @@
 #include <fstream>
 
 #include <GL\glew.h>
+#include <glm.hpp>
+#include <gtc\type_ptr.hpp>
 
 #include "CommonValues.h"
 
@@ -37,6 +39,9 @@ public:
 	void SetDirectionalLight(DirectionalLight * dLight);
 	void SetPointLights(PointLight* pLight, unsigned int lightCount);
 	void SetSpotLights(SpotLight* sLight, unsigned int lightCount);
+	void SetTexture(GLuint textureUnit); // we are actually having more than 1 texture we need to define this one is 0 
+	void SetDirectionalShadowMap(GLuint textureUnit); // and this one is 1
+	void SetDirectionalLightTransform(const glm::mat4& lTransform);
 
 	void UseShader();
 	void ClearShader();
@@ -48,7 +53,9 @@ private:
 	int spotLightCount;
 
 	GLuint shaderID, uniformProjection, uniformModel, uniformView, uniformEyePosition, // world values
-		uniformSpecularIntensity, uniformShininess; // material values
+		uniformSpecularIntensity, uniformShininess,
+		uniformTexture,
+		uniformDirectionalLightTransform, uniformDirectionalShadowMap; // material values
 
 	struct {
 		GLuint uniformColour;
