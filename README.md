@@ -102,11 +102,11 @@ How to use the Phong Lightning Model
 
 How to implement Directional, Point and Spot Lights
 
-All credits go to Ben Cook who with his Udemy course helped me learn about graphics programming.
-
 How to import models
 
 How to create and use Shadow Maps
 
 How to implement a Skybox
 
+
+All credits go to Ben Cook who with his Udemy course helped me learn about graphics programming.
