@@ -6,6 +6,7 @@
 #include <fstream>
 
 #include <GL\glew.h>
+
 #include <glm.hpp>
 #include <gtc\type_ptr.hpp>
 
@@ -22,6 +23,9 @@ public:
 
 	void CreateFromString(const char* vertexCode, const char* fragmentCode);
 	void CreateFromFiles(const char* vertexLocation, const char* fragmentLocation);
+	void CreateFromFiles(const char* vertexLocation, const char* geometryLocation, const char* fragmentLocation);
+
+	void Validate();
 
 	std::string ReadFile(const char* fileLocation);
 
@@ -32,16 +36,20 @@ public:
 	GLuint GetAmbientColourLocation();
 	GLuint GetDiffuseIntensityLocation();
 	GLuint GetDirectionLocation();
-	GLuint GetEyePositionLocation();
 	GLuint GetSpecularIntensityLocation();
 	GLuint GetShininessLocation();
-	
-	void SetDirectionalLight(DirectionalLight * dLight);
-	void SetPointLights(PointLight* pLight, unsigned int lightCount);
-	void SetSpotLights(SpotLight* sLight, unsigned int lightCount);
-	void SetTexture(GLuint textureUnit); // we are actually having more than 1 texture we need to define this one is 0 
-	void SetDirectionalShadowMap(GLuint textureUnit); // and this one is 1
+	GLuint GetEyePositionLocation();
+	GLuint GetOmniLightPosLocation();
+	GLuint GetFarPlaneLocation();
+
+	void SetDirectionalLight(DirectionalLight* dLight);
+	void SetPointLights(PointLight* pLight, unsigned int lightCount, unsigned int textureUnit, unsigned int offset);
+	void SetSpotLights(SpotLight* sLight, unsigned int lightCount, unsigned int textureUnit, unsigned int offset);
+	void SetTexture(GLuint textureUnit);
+	void SetDirectionalShadowMap(GLuint textureUnit);
 	void SetDirectionalLightTransform(const glm::mat4& lTransform);
+
+	void SetOmniLightMatrices(std::vector<glm::mat4> lightMatrices);
 
 	void UseShader();
 	void ClearShader();
@@ -52,10 +60,13 @@ private:
 	int pointLightCount;
 	int spotLightCount;
 
-	GLuint shaderID, uniformProjection, uniformModel, uniformView, uniformEyePosition, // world values
+	GLuint shaderID, uniformProjection, uniformModel, uniformView, uniformEyePosition,
 		uniformSpecularIntensity, uniformShininess,
 		uniformTexture,
-		uniformDirectionalLightTransform, uniformDirectionalShadowMap; // material values
+		uniformDirectionalLightTransform, uniformDirectionalShadowMap,
+		uniformOmniLightPos, uniformFarPlane;
+
+	GLuint uniformLightMatrices[6];
 
 	struct {
 		GLuint uniformColour;
@@ -63,7 +74,6 @@ private:
 		GLuint uniformDiffuseIntensity;
 
 		GLuint uniformDirection;
-		
 	} uniformDirectionalLight;
 
 	GLuint uniformPointLightCount;
@@ -77,12 +87,11 @@ private:
 		GLuint uniformConstant;
 		GLuint uniformLinear;
 		GLuint uniformExponent;
-
-	} uniformPointLight[MAX_POINT_LIGHTS]; // we want this as an array = to the max amount of point lights
+	} uniformPointLight[MAX_POINT_LIGHTS];
 
 	GLuint uniformSpotLightCount;
 
-	struct{
+	struct {
 		GLuint uniformColour;
 		GLuint uniformAmbientIntensity;
 		GLuint uniformDiffuseIntensity;
@@ -94,9 +103,17 @@ private:
 
 		GLuint uniformDirection;
 		GLuint uniformEdge;
-	}uniformSpotLight[MAX_SPOT_LIGHTS];
+	} uniformSpotLight[MAX_SPOT_LIGHTS];
+
+	struct {
+		GLuint uniformShadowMap;
+		GLuint uniformFarPlane;
+	} uniformOmniShadowMap[MAX_POINT_LIGHTS + MAX_SPOT_LIGHTS];
 
 	void CompileShader(const char* vertexCode, const char* fragmentCode);
+	void CompileShader(const char* vertexCode, const char* geometryCode, const char* fragmentCode);
 	void AddShader(GLuint theProgram, const char* shaderCode, GLenum shaderType);
+
+	void CompileProgram();
 };
 

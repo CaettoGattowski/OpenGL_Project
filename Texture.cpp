@@ -1,13 +1,14 @@
 #include "Texture.h"
 
 
+
 Texture::Texture()
 {
 	textureID = 0;
 	width = 0;
 	height = 0;
 	bitDepth = 0;
-	fileLocation = NULL;
+	fileLocation = "";
 }
 
 Texture::Texture(const char* fileLoc)
@@ -31,15 +32,13 @@ bool Texture::LoadTexture()
 	glGenTextures(1, &textureID);
 	glBindTexture(GL_TEXTURE_2D, textureID);
 
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT); // S is how the image is wrapping along the X axis
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR); // linear = when you zoom on 2 pixels it will try to blend them together when zoom in or out , nearest is more pixelated retro look
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR); // linear = when you zoom on 2 pixels it will try to blend them together when zoom in or out , nearest is more pixelated retro look
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
-
-	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, texData); // char is a byte they are both 8 bits long
+	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, texData);
 	glGenerateMipmap(GL_TEXTURE_2D);
-
 
 	glBindTexture(GL_TEXTURE_2D, 0);
 
@@ -60,15 +59,13 @@ bool Texture::LoadTextureA()
 	glGenTextures(1, &textureID);
 	glBindTexture(GL_TEXTURE_2D, textureID);
 
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT); // S is how the image is wrapping along the X axis
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT); 
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR); // linear = when you zoom on 2 pixels it will try to blend them together when zoom in or out , nearest is more pixelated retro look
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR); // linear = when you zoom on 2 pixels it will try to blend them together when zoom in or out , nearest is more pixelated retro look
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
-
-	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, texData); // char is a byte they are both 8 bits long
+	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, texData);
 	glGenerateMipmap(GL_TEXTURE_2D);
-
 
 	glBindTexture(GL_TEXTURE_2D, 0);
 
@@ -79,7 +76,7 @@ bool Texture::LoadTextureA()
 
 void Texture::UseTexture()
 {
-	glActiveTexture(GL_TEXTURE0); // this is a texture unit, when the texture is run into the fragment shader this is a sampler sampler ID must be equal to texture ID, basically binds the texture
+	glActiveTexture(GL_TEXTURE1);
 	glBindTexture(GL_TEXTURE_2D, textureID);
 }
 
@@ -90,7 +87,7 @@ void Texture::ClearTexture()
 	width = 0;
 	height = 0;
 	bitDepth = 0;
-	fileLocation = NULL;
+	fileLocation = "";
 }
 
 
